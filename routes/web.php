@@ -14,5 +14,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('todos');
 });
+
+Route::get('todos/{todo}', function ($slug) {
+
+    $path = __DIR__ . "/../resources/todos/{$slug}.html";
+
+
+    if (!file_exists($path)) {
+        return redirect('/');
+    }
+
+    $todo = file_get_contents($path);
+
+    return view('todo', [
+        'todo' => $todo
+    ]);
+})->where('todo', '[A-z_\-]+');

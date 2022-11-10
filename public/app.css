@@ -1,0 +1,17 @@
+body {
+    background: white;
+    color: black;
+    max-width: 600px;
+    margin: auto;
+    font-family: 'Lucida Sans';
+}
+
+p {
+    line-height: 1.7;
+}
+
+article {
+    margin-top: 3rem;
+    padding: 3rem;
+    border-top: 1px solid #c5c5c5;
+}

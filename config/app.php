@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('PEGASUS_TODO_DELUXE', 'Laravel'),
 
     /*
     |--------------------------------------------------------------------------
